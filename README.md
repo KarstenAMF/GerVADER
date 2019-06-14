@@ -30,7 +30,7 @@ The lexicon has been collected by the author and rated by individuals. The lexic
 > R. Remus, U. Quasthoff & G. Heyer: SentiWS - a Publicly Available German-language Resource for Sentiment Analysis.
 In: Proceedings of the 7th International Language Ressources and Evaluation (LREC'10), pp. 1168-1171, 2010
 
-**For using GerVADER make sure to cite [SentiWS](http://wortschatz.uni-leipzig.de/de/download) and accept their license.**
+**For using GerVADER or just the lexicon make sure to cite [SentiWS](http://wortschatz.uni-leipzig.de/de/download) and accept their license. The ratings of the lexicon are part of GerVADER, so make sure to quote GerVADER**.
 
 More details on the lexicon can be found in GerVADERs paper.
 
@@ -104,7 +104,7 @@ Just like 3) but neutral tweets are skipped.
 
 ### vaderSentimentGER
 
-vaderSentimentGER is the actual VADER script transformed into a German adaptation. Moreover some utility functions have been added in order to allow for an easier classification of corpora. 
+vaderSentimentGER is the actual VADER script transformed into a German adaptation. Moreover some utility functions have been added in order to allow for an easier classification of corpora.
 
 ## Corpora
 
