@@ -11,7 +11,7 @@ and [GitHub - VADER](https://github.com/cjhutto/vaderSentiment).
 
 ## Paper
 
-For more information on **GerVADER**, please check the paper linked here: http://ceur-ws.org/Vol-2454/. As part of the LWDA2019 Proceedings: http://ceur-ws.org/Vol-2454/.
+For more information on **GerVADER**, please check the paper linked here: http://ceur-ws.org/Vol-2454/paper_14.pdf. As part of the LWDA2019 Proceedings: http://ceur-ws.org/Vol-2454/.
 
 ### Citation
 
