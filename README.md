@@ -1,7 +1,5 @@
 # GerVADER
 
-*WIP - This repository is still under construction. For more details on GerVADER, the paper etc. please check the repository later*
-
 GerVADER is a German adaptation of the sentiment classification tool VADER. VADER is a lexicon and rule-based approach in classifying sentences into positive, negative or neutral statements and puts a focus on social media texts.
 
 GerVADER copied the process for the German language and comes with its own lexicon and edited rules for the German language. Just like VADER it is free to use.
@@ -13,11 +11,17 @@ and [GitHub - VADER](https://github.com/cjhutto/vaderSentiment).
 
 ## Paper
 
-For more information on **GerVADER**, please check the paper linked here: *WIP - please recheck later*.
+For more information on **GerVADER**, please check the paper linked here: http://ceur-ws.org/Vol-2454/. As part of the LWDA2019 Proceedings: http://ceur-ws.org/Vol-2454/.
+
+### Citation
+
+For your future works, please cite GerVADER as follows.
+
+> Karsten Michael Tymann, Matthias Lutz, Patrick Palsbröker and Carsten Gips: GerVADER - A German adaptation of the VADER sentiment analysis tool for social media texts. In Proceedings of the Conference "Lernen, Wissen, Daten, Analysen" (LWDA 2019), Berlin, Germany, September 30 - October 2, 2019.
 
 ## LICENSE
 
-For greated details on the usage of GerVADER please come back later.
+For greater details on the usage of GerVADER please come back later.
 
 ## About GerVADER
 
@@ -115,6 +119,8 @@ In the paper multiple corpora are mentioned and used for the benchmark.
 SB10k is a German twitter corpus used for evaluating GerVADER (more details check the paper). Because of legal reasons, the tweets can not be published with GerVADER.
 
 For the tweet ids used in the benchmark, please email me or come back later to the repository.
+
+Cite SB10k as follows:
 
 >Cieliebak, Mark and Deriu, Jan and Egger, Dominic and Uzdilli, Fatih: A Twitter
 Corpus and Benchmark Resources for German Sentiment Analysis. Social NLP @
