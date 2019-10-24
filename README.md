@@ -13,6 +13,8 @@ and [GitHub - VADER](https://github.com/cjhutto/vaderSentiment).
 
 For more information on **GerVADER**, please check the paper linked here: http://ceur-ws.org/Vol-2454/paper_14.pdf. As part of the LWDA2019 Proceedings: http://ceur-ws.org/Vol-2454/.
 
+Check out the **LWDA2019 presentation**: https://pages.cms.hu-berlin.de/ipa/lwda-pdf/GerVader-eng.ver-1.pdf
+
 ### Citation
 
 For your future works, please cite GerVADER as follows.
