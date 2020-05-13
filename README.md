@@ -23,7 +23,7 @@ For your future works, please cite GerVADER as follows.
 
 ## LICENSE
 
-For greater details on the usage of GerVADER please come back later.
+GerVADER is free under MIT-License.
 
 ## About GerVADER
 
@@ -52,8 +52,6 @@ To find out more about GerVADER and its classification scores, please check the 
 - Python 3.7
 
 ## How To Use
-
-*WIP - The codebase is still in construction.*
 
 ### Corpus format
 
@@ -139,3 +137,7 @@ For more information on SCARE and the corpus please check the following resource
 >Mario Sänger, Ulf Leser, Steffen Kemmerer, Peter Adolphs, and Roman Klinger. SCARE -- The Sentiment Corpus of App Reviews with Fine-grained Annotations in German. In Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC'16), Portorož, Slovenia, May 2016. European Language Resources Association (ELRA)
 
 [Link to SCARE corpus](http://www.romanklinger.de/scare/)
+
+## Results
+
+As can be seen from the papers results, GerVADER underperforms compared to VADER. I suggest to only use GerVADER for benchmarking and not for real business applications
