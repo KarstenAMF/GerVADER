@@ -38,6 +38,8 @@ In: Proceedings of the 7th International Language Ressources and Evaluation (LRE
 
 **For using GerVADER or just the lexicon make sure to cite [SentiWS](http://wortschatz.uni-leipzig.de/de/download) and accept their license. Moreover the ratings of the lexicon are part of GerVADER, so make sure to quote GerVADER**.
 
+The *GERLexicon_noexpansion* is GERVaders crowd-rated lexicon of german words. The *GERVaderLexicon* has been expanded with the grammatical forms as well as with emoticons and english phrases taken from the *VADER* lexicon. 
+
 More details on the lexicon can be found in GerVADERs paper.
 
 #### Heuristics
@@ -140,4 +142,5 @@ For more information on SCARE and the corpus please check the following resource
 
 ## Results
 
-As can be seen from the papers results, GerVADER underperforms compared to VADER. I suggest to only use GerVADER for benchmarking and not for real business applications
+As can be seen from the papers results, GerVADER underperforms compared to VADER. I suggest to only use GerVADER for benchmarking and not for real business applications.
+The *GERLexicon_noexpansion.txt* is however useful for a crowd-rated source of german sentiment words. For usage, please read the *Lexicon* chapter above.
