@@ -25,9 +25,9 @@ For your future works, please cite GerVADER as follows.
 
 GerVADER is free under MIT-License.
 
-## About GerVADER
+## Changes GerVADER 2.0
 
-Since GerVADER is an adaptation of VADER, most of the algorithm used for sentiment analysis has been kept the same. For greater details please refer to the GerVADER paper.
+todo
 
 #### Lexicon
 
