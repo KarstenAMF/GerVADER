@@ -9,6 +9,10 @@ For more information on **VADER** please check:
 
 and [GitHub - VADER](https://github.com/cjhutto/vaderSentiment).
 
+## Example usage and RapidAPI
+
+GerVADER can be used and tested on [RapidAPI - GerVADER](https://rapidapi.com/KarstenT/api/gervader). The API uses the same source code as this repository, so a free usage with unlimited quota is always available. At some point, the experimental v2 of GerVADER might be added to the API/repository.
+
 ## Paper
 
 For more information on **GerVADER**, please check the paper linked here: http://ceur-ws.org/Vol-2454/paper_14.pdf. As part of the LWDA2019 Proceedings: http://ceur-ws.org/Vol-2454/.
