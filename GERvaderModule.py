@@ -1,4 +1,5 @@
 import vaderSentimentGER as GERVADER
+import argparse
 import pathlib
 import datetime
 
@@ -77,15 +78,54 @@ def sentimentSplitter():
     print("Analyzing NEGATIVE statements")
     GERVADER.entry(filename, directoryname, "negative")
 
+
 if __name__ == '__main__':
     print("Welcome to GERVader")
-    print("Which mode do you want to use? (1 or 2)")
-    print("1) Split analysis into 3 steps. Analyze all positive statements, analyze all neutral statements, analzye all negative statements")
-    print("2) Analyze all input in one step. For detailed correctness calculation, use 1)")
-    mode = input("==>")
-    if mode.lower().strip() == "1":
-        sentimentSplitter()
-    elif mode.lower().strip() == "2":
-        sentimentOneRun()
+    args_parser = argparse.ArgumentParser(
+        prog='python GERvaderModule.py',
+        description='GerVADER - A German adaptation of the VADER sentiment analysis tool for social media texts'
+    )
+
+    args_parser.add_argument('-i', '--input', type=str, help='input file')
+    args_parser.add_argument('-o', '--output', type=str, help='output directory')
+    args_parser.add_argument('-m', '--mode', type=str, help='mode 1 splits analysis into 3 steps. mode 2 analyzes all input in one step')
+
+    args = args_parser.parse_args()
+
+    output_dir = args.output
+    input_file = args.input
+    mode = args.mode
+
+    if (output_dir is not None and input_file is not None and mode is not None):
+        print("You have provided all arguments")
+        print("Skipping selection")
+        if (mode == "1"):
+            print("Running in mode 1")
+            print("Creating output directorys in ./results/")
+            pathlib.Path('./results/'+output_dir).mkdir(exist_ok=True)
+            pathlib.Path('./results/'+output_dir+"/"+"positive").mkdir(exist_ok=True)
+            pathlib.Path('./results/'+output_dir+"/"+"negative").mkdir(exist_ok=True)
+            pathlib.Path('./results/'+output_dir+"/"+"neutral").mkdir(exist_ok=True)
+            print("\nAnalyzing POSITIVE statements")
+            GERVADER.entry(input_file, output_dir, "positive")
+            print("Analyzing NEUTRAL statements")
+            GERVADER.entry(input_file, output_dir, "neutral")
+            print("Analyzing NEGATIVE statements")
+            GERVADER.entry(input_file, output_dir, "negative")
+        elif (mode == "2"):
+            print("Running in mode 2")
+            print("Creating output directorys in ./results/mode_All/")
+            pathlib.Path('./results/mode_All/'+output_dir).mkdir(exist_ok=True)
+            print("\nAnalyzing ALL statements")
+            GERVADER.sentimentAll(input_file, output_dir)
     else:
-        print("No mode selected, closing GERVader")
+        print("Which mode do you want to use? (1 or 2)")
+        print("1) Split analysis into 3 steps. Analyze all positive statements, analyze all neutral statements, analzye all negative statements")
+        print("2) Analyze all input in one step. For detailed correctness calculation, use 1)")
+        mode = input("==>")
+        if mode.lower().strip() == "1":
+            sentimentSplitter()
+        elif mode.lower().strip() == "2":
+            sentimentOneRun()
+        else:
+            print("No mode selected, closing GERVader")
